@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y78M1M7D4Y"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Y78M1M7D4Y');</script>
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="favicon-180x180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Mulish:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&family=Gochi+Hand&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+body{margin:0;}
+#nav-toggle{display:none;}
+.nav-collapse{display:contents;}
+.nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:34px;height:34px;cursor:pointer;flex:none;}
+.nav-burger span{display:block;height:3px;width:24px;background:#20222B;border-radius:2px;transition:transform .22s,opacity .2s;}
+@media (max-width:600px){
+  [style*="grid-template-columns: 1.5fr 1fr 1fr 1.2fr"]{grid-template-columns:1fr!important;}
+  [style*="max-width: 1180px"]{padding-left:18px!important;padding-right:18px!important;}
+  [style*="font-size: 46px"]{font-size:30px!important;}
+  .nav-burger{display:flex!important;}
+  header>div{position:relative;}
+  .nav-collapse{display:none!important;}
+  #nav-toggle:checked~.nav-burger span:nth-child(1){transform:translateY(8px) rotate(45deg);}
+  #nav-toggle:checked~.nav-burger span:nth-child(2){opacity:0;}
+  #nav-toggle:checked~.nav-burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+  #nav-toggle:checked~.nav-collapse{display:flex!important;flex-direction:column;align-items:stretch;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid #EFEFEC;box-shadow:0 18px 28px -18px rgba(0,0,0,.32);padding:6px 22px 18px;z-index:40;}
+  .nav-collapse nav{flex-direction:column!important;align-items:stretch!important;gap:0!important;width:100%;font-size:16px!important;}
+  .nav-collapse nav a{padding:13px 2px!important;width:100%;border-bottom:1px solid #F1F1ED;}
+  .nav-collapse>a{display:block!important;text-align:center;margin-top:10px;}
+}
+</style>
+</helmet>
+
+<div data-screen-label="Privacy Policy" style="font-family:'Mulish',system-ui,sans-serif; color:#4C4E58; background:#fff; -webkit-font-smoothing:antialiased;">
+
+<header style="position:relative; z-index:20; background:#fff; border-bottom:1px solid #EFEFEC;">
+  <div style="max-width:1180px; margin:0 auto; padding:16px 32px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+    <a href="/" style="display:flex; align-items:center; gap:11px; text-decoration:none;">
+      <img src="assets/logo-emblem.png" alt="Joyful Zen Preschool" style="height:52px; width:52px; border-radius:50%; border:2.5px solid #45B6E6; background:#fff; padding:4px; display:block;">
+      <span style="font-family:'Fredoka'; font-weight:600; font-size:16px; letter-spacing:-0.01em; color:#20222B; line-height:1.05;">JOYFUL ZEN<br><span style="font-weight:600; font-size:11px; letter-spacing:0.24em; color:#45B6E6;">PRESCHOOL</span></span>
+    </a>
+    <input type="checkbox" id="nav-toggle" aria-label="Toggle menu" style="display:none;">
+    <label class="nav-burger" for="nav-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+    <div class="nav-collapse">
+      <nav style="display:flex; align-items:center; gap:24px; font-family:'Hanken Grotesk'; font-weight:600; font-size:15px;">
+        <a href="/" style="color:#20222B; text-decoration:none;">Home</a>
+        <a href="/about" style="color:#20222B; text-decoration:none;">About</a>
+        <a href="/programs" style="color:#20222B; text-decoration:none;">Programs</a>
+        <a href="/admissions" style="color:#20222B; text-decoration:none;">Admissions</a>
+        <a href="/contact" style="color:#20222B; text-decoration:none;">Contact</a>
+      </nav>
+      <a href="https://ellie.bumo.com/location/joyful-zen-preschool-burbank-ca" target="_blank" rel="noopener" style="font-family:'Hanken Grotesk'; font-weight:800; font-size:14px; color:#20222B; background:transparent; border:2px solid #45B6E6; padding:11px 20px; border-radius:99px; cursor:pointer; text-decoration:none; margin-left:20px;">Book on Demand</a>
+      <a href="/book-a-tour" style="font-family:'Hanken Grotesk'; font-weight:800; font-size:14px; color:#fff; background:#45B6E6; padding:13px 22px; border-radius:99px; cursor:pointer; text-decoration:none; margin-left:10px;">Book a Tour ↗</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section style="background-color:#FBF9F4; background-image:linear-gradient(180deg, rgba(251,249,244,.9), rgba(251,249,244,.8) 55%, rgba(251,249,244,.98) 96%), url('assets/safari-mural.jpg'); background-size:auto, cover; background-position:center, center 20%; background-repeat:no-repeat, no-repeat; background-attachment:scroll, fixed; padding:54px 32px 30px;">
+  <div style="max-width:1180px; margin:0 auto;">
+    <div style="font-family:'Gochi Hand'; font-size:24px; color:#2B9FD4; transform:rotate(-2deg);">✦ The fine print, kept simple</div>
+    <h1 style="font-family:'Fredoka'; font-weight:600; font-size:46px; line-height:1.1; letter-spacing:-0.01em; color:#20222B; margin:12px 0 0;">Privacy Policy</h1>
+    <p style="font-family:'Mulish'; font-size:15px; color:#9AA0AC; font-weight:700; margin:14px 0 0;">Last updated: July 2026</p>
+  </div>
+</section>
+
+<!-- BODY -->
+<section style="background:#fff; padding:36px 32px 80px;">
+  <div style="max-width:760px; margin:0 auto;">
+    <p style="font-family:'Mulish'; font-size:17px; line-height:1.7; color:#3F424B; margin:0;">Joyful Zen Preschool ("we," "us," or "our") respects your family's privacy. This policy explains what information we collect when you visit our website or contact us, how we use it, and the choices you have. We've kept it short and plain on purpose.</p>
+
+    <div style="font-family:'Fredoka'; font-weight:600; font-size:22px; color:#20222B; margin:40px 0 0;">Information we collect</div>
+    <p style="font-family:'Mulish'; font-size:16px; line-height:1.7; color:#52555E; margin:12px 0 0;">When you fill out a tour request or contact form, we collect the details you choose to share, typically your name, email address, phone number, your child's age, and any message you send us. We may also collect basic, non-identifying analytics about how visitors use our site to help us improve it.</p>
+
+    <div style="font-family:'Fredoka'; font-weight:600; font-size:22px; color:#20222B; margin:34px 0 0;">How we use your information</div>
+    <p style="font-family:'Mulish'; font-size:16px; line-height:1.7; color:#52555E; margin:12px 0 0;">We use the information you provide to respond to your inquiries, schedule tours, share admissions details, and communicate with you about our program. We do not sell your personal information, and we don't use it for advertising.</p>
+
+    <div style="font-family:'Fredoka'; font-weight:600; font-size:22px; color:#20222B; margin:34px 0 0;">Children's privacy</div>
+    <p style="font-family:'Mulish'; font-size:16px; line-height:1.7; color:#52555E; margin:12px 0 0;">Our website is intended for use by parents and guardians, not children. We do not knowingly collect personal information directly from children through this site. Information about a child is provided by a parent or guardian and is used solely to support enrollment and communication with your family.</p>
+
+    <div style="font-family:'Fredoka'; font-weight:600; font-size:22px; color:#20222B; margin:34px 0 0;">How we share information</div>
+    <p style="font-family:'Mulish'; font-size:16px; line-height:1.7; color:#52555E; margin:12px 0 0;">We share your information only with trusted service providers who help us operate our site and respond to you (for example, form and email tools), and only as needed to provide those services. We may also disclose information if required by law.</p>
+
+    <div style="font-family:'Fredoka'; font-weight:600; font-size:22px; color:#20222B; margin:34px 0 0;">Data security &amp; retention</div>
+    <p style="font-family:'Mulish'; font-size:16px; line-height:1.7; color:#52555E; margin:12px 0 0;">We take reasonable steps to protect the information you share with us, and we keep it only as long as needed to respond to your inquiry or as required for our records.</p>
+
+    <div style="font-family:'Fredoka'; font-weight:600; font-size:22px; color:#20222B; margin:34px 0 0;">Your choices</div>
+    <p style="font-family:'Mulish'; font-size:16px; line-height:1.7; color:#52555E; margin:12px 0 0;">You may ask us to access, update, or delete the personal information you've shared at any time. To make a request, just reach out using the contact details below.</p>
+
+    <div style="font-family:'Fredoka'; font-weight:600; font-size:22px; color:#20222B; margin:34px 0 0;">Contact us</div>
+    <p style="font-family:'Mulish'; font-size:16px; line-height:1.7; color:#52555E; margin:12px 0 0;">Questions about this policy? We're happy to help.</p>
+    <div style="margin-top:16px; background:#fff; border:1px solid #ECECE7; border-left:5px solid #3E9B5F; border-radius:14px; padding:20px 24px; font-family:'Mulish'; font-size:15.5px; line-height:1.8; color:#3F424B;">
+      <strong style="color:#20222B;">Joyful Zen Preschool</strong><br>
+      (323) 709-3045<br>
+      info@joyfulzen.org<br>
+      Burbank, California
+    </div>
+
+    <div style="font-family:'Gochi Hand'; font-size:22px; color:#9AA0AC; margin-top:30px; transform:rotate(-1deg);">Thanks for reading the fine print ✦</div>
+  </div>
+</section>
+
+<footer style="position:relative; background:#EA4B3C; color:#fff; padding:64px 32px 32px;">
+  <svg viewBox="0 0 1440 40" preserveAspectRatio="none" style="position:absolute; top:-1px; left:0; width:100%; height:34px;"><path d="M0 20 C 180 0, 360 40, 540 20 C 720 0, 900 40, 1080 20 C 1260 0, 1350 30, 1440 15 L1440 0 L0 0 Z" fill="#EA4B3C"></path></svg>
+  <div style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:1.5fr 1fr 1fr 1.2fr; gap:36px;">
+    <div>
+      <div style="display:flex; align-items:center; gap:11px;"><img src="assets/logo-emblem.png" alt="Joyful Zen Preschool" style="height:58px; width:58px; border-radius:50%; border:2.5px solid #45B6E6; background:#fff; padding:4px;"><span style="font-family:'Fredoka'; font-weight:600; font-size:16px; color:#fff; line-height:1.05;">JOYFUL ZEN<br><span style="font-weight:600; font-size:11px; letter-spacing:0.24em; color:#fff;">PRESCHOOL</span></span></div>
+      <p style="font-family:'Mulish'; font-size:14px; line-height:1.6; color:#FFE9E4; margin:16px 0 0; max-width:32ch;">A warm, joyful preschool for ages 2½–5 in Burbank, California.</p>
+      <div style="font-family:'Gochi Hand'; font-size:22px; color:#FFE36B; margin-top:14px; transform:rotate(-2deg);">be kind ♥ stay curious</div>
+    </div>
+    <div>
+      <div style="font-family:'Hanken Grotesk'; font-weight:800; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#FFE9E4; margin-bottom:14px;">Explore</div>
+      <div style="display:flex; flex-direction:column; gap:10px; font-family:'Mulish'; font-size:14px; font-weight:600;">
+        <a href="/" style="color:#fff; text-decoration:none;">Home</a>
+        <a href="/about" style="color:#fff; text-decoration:none;">About</a>
+        <a href="/programs" style="color:#fff; text-decoration:none;">Programs</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Hanken Grotesk'; font-weight:800; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#FFE9E4; margin-bottom:14px;">Admissions</div>
+      <div style="display:flex; flex-direction:column; gap:10px; font-family:'Mulish'; font-size:14px; font-weight:600;">
+        <a href="/admissions" style="color:#fff; text-decoration:none;">Admissions</a>
+        <a href="/book-a-tour" style="color:#fff; text-decoration:none;">Book a Tour</a>
+        <a href="https://ellie.bumo.com/location/joyful-zen-preschool-burbank-ca" target="_blank" rel="noopener" style="color:#fff; text-decoration:none;">Book On-Demand (BUMO) ↗</a>
+        <a href="/contact" style="color:#fff; text-decoration:none;">Contact</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Hanken Grotesk'; font-weight:800; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#FFE9E4; margin-bottom:14px;">Contact</div>
+      <div style="display:flex; flex-direction:column; gap:10px; font-family:'Mulish'; font-size:14px; font-weight:600; color:#fff;">
+        <span>(323) 709-3045</span>
+        <span>info@joyfulzen.org</span>
+        <span>Burbank, California</span>
+      </div>
+      <a href="https://www.instagram.com/joyfulzenpreschool/" target="_blank" rel="noopener" style="margin-top:16px; display:inline-flex; flex-direction:column; align-items:flex-start; gap:6px; text-decoration:none;"><span style="font-family:'Gochi Hand'; font-size:19px; color:#FFE36B; transform:rotate(-2deg); display:inline-block;">follow us on instagram!</span><span style="display:flex; align-items:center; gap:10px;"><span aria-hidden="true" style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:10px; background:transparent; color:#fff;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="2"></rect><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="2"></circle><circle cx="17.5" cy="6.5" r="1.35" fill="currentColor"></circle></svg></span><span style="font-family:'Hanken Grotesk'; font-weight:800; font-size:14px; color:#fff;">@joyfulzenpreschool</span></span></a>
+    </div>
+  </div>
+  <div style="max-width:1180px; margin:32px auto 0; padding-top:20px; border-top:1px solid rgba(255,255,255,.22); font-family:'Mulish'; font-size:12.5px; color:#FBD9D3; display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap;"><span>© 2026 Joyful Zen Preschool. All rights reserved.</span><a href="/privacy-policy" style="color:#fff; text-decoration:none;">Privacy Policy</a></div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    document.title = "Privacy Policy | Joyful Zen Preschool";
+    var setMeta = function(name, content, prop) {
+      var sel = prop ? 'meta[property="'+name+'"]' : 'meta[name="'+name+'"]';
+      var el = document.head.querySelector(sel);
+      if (!el) { el = document.createElement('meta'); if (prop) el.setAttribute('property', name); else el.setAttribute('name', name); document.head.appendChild(el); }
+      el.setAttribute('content', content);
+    };
+    var pageDescription = "Privacy policy for Joyful Zen Preschool in Burbank, California.";
+    setMeta('description', pageDescription);
+    setMeta('robots', 'noindex, follow');
+    var canon = document.head.querySelector('link[rel="canonical"]');
+    if (!canon) { canon = document.createElement('link'); canon.setAttribute('rel','canonical'); document.head.appendChild(canon); }
+    canon.setAttribute('href', 'https://joyfulzen.org/privacy-policy');
+    setMeta('og:title', document.title, true);
+    setMeta('og:description', pageDescription, true);
+    setMeta('og:type', 'website', true);
+    setMeta('og:url', 'https://joyfulzen.org/privacy-policy', true);
+    setMeta('og:image', 'https://joyfulzen.org/assets/pre-boys-magnifier.jpg', true);
+    setMeta('og:site_name', 'Joyful Zen Preschool', true);
+    setMeta('twitter:card', 'summary_large_image');
+    setMeta('twitter:title', document.title);
+    setMeta('twitter:description', pageDescription);
+    setMeta('twitter:image', 'https://joyfulzen.org/assets/pre-boys-magnifier.jpg');
+  }
+}
+
+</script>
+</body>
+</html>

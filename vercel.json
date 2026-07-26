@@ -1,0 +1,13 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/Home.dc.html" },
+    { "source": "/about", "destination": "/About.dc.html" },
+    { "source": "/programs", "destination": "/Programs.dc.html" },
+    { "source": "/admissions", "destination": "/Admissions.dc.html" },
+    { "source": "/book-a-tour", "destination": "/BookATour.dc.html" },
+    { "source": "/contact", "destination": "/Contact.dc.html" },
+    { "source": "/privacy-policy", "destination": "/Privacy.dc.html" }
+  ]
+}

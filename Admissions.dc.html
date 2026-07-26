@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y78M1M7D4Y"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Y78M1M7D4Y');</script>
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="favicon-180x180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Mulish:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&family=Gochi+Hand&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+body{margin:0;}
+details.faq>summary{list-style:none;cursor:pointer;}
+details.faq>summary::-webkit-details-marker{display:none;}
+details.faq[open] .faq-plus{transform:rotate(45deg);}
+#nav-toggle{display:none;}
+.nav-collapse{display:contents;}
+.nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:34px;height:34px;cursor:pointer;flex:none;}
+.nav-burger span{display:block;height:3px;width:24px;background:#20222B;border-radius:2px;transition:transform .22s,opacity .2s;}
+@media (max-width:1024px){
+  [style*="grid-template-columns: repeat(4, 1fr)"]{grid-template-columns:repeat(2,1fr)!important;}
+  [style*="max-width: 1180px"]{padding-left:24px!important;padding-right:24px!important;}
+  [style*="font-size: 48px"]{font-size:38px!important;}
+}
+@media (max-width:600px){
+  [style*="grid-template-columns: repeat(4, 1fr)"],[style*="grid-template-columns: 1.5fr 1fr 1fr 1.2fr"]{grid-template-columns:1fr!important;}
+  [style*="max-width: 1180px"]{padding-left:18px!important;padding-right:18px!important;}
+  [style*="font-size: 48px"]{font-size:30px!important;}
+  .nav-burger{display:flex!important;}
+  header>div{position:relative;}
+  .nav-collapse{display:none!important;}
+  #nav-toggle:checked~.nav-burger span:nth-child(1){transform:translateY(8px) rotate(45deg);}
+  #nav-toggle:checked~.nav-burger span:nth-child(2){opacity:0;}
+  #nav-toggle:checked~.nav-burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+  #nav-toggle:checked~.nav-collapse{display:flex!important;flex-direction:column;align-items:stretch;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid #EFEFEC;box-shadow:0 18px 28px -18px rgba(0,0,0,.32);padding:6px 22px 18px;z-index:40;}
+  .nav-collapse nav{flex-direction:column!important;align-items:stretch!important;gap:0!important;width:100%;font-size:16px!important;}
+  .nav-collapse nav a{padding:13px 2px!important;width:100%;border-bottom:1px solid #F1F1ED;}
+  .nav-collapse>a{display:block!important;text-align:center;margin-top:10px;}
+}
+</style>
+</helmet>
+
+<div data-screen-label="Admissions" style="font-family:'Mulish',system-ui,sans-serif; color:#4C4E58; background:#fff; -webkit-font-smoothing:antialiased;">
+
+<header style="position:relative; z-index:20; background:#fff; border-bottom:1px solid #EFEFEC;">
+  <div style="max-width:1180px; margin:0 auto; padding:16px 32px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+    <a href="/" style="display:flex; align-items:center; gap:11px; text-decoration:none;">
+      <img src="assets/logo-emblem.png" alt="Joyful Zen Preschool" style="height:52px; width:52px; border-radius:50%; border:2.5px solid #45B6E6; background:#fff; padding:4px; display:block;">
+      <span style="font-family:'Fredoka'; font-weight:600; font-size:16px; letter-spacing:-0.01em; color:#20222B; line-height:1.05;">JOYFUL ZEN<br><span style="font-weight:600; font-size:11px; letter-spacing:0.24em; color:#45B6E6;">PRESCHOOL</span></span>
+    </a>
+    <input type="checkbox" id="nav-toggle" aria-label="Toggle menu" style="display:none;">
+    <label class="nav-burger" for="nav-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+    <div class="nav-collapse">
+      <nav style="display:flex; align-items:center; gap:24px; font-family:'Hanken Grotesk'; font-weight:600; font-size:15px;">
+        <a href="/" style="color:#20222B; text-decoration:none;">Home</a>
+        <a href="/about" style="color:#20222B; text-decoration:none;">About</a>
+        <a href="/programs" style="color:#20222B; text-decoration:none;">Programs</a>
+        <a href="/admissions" style="color:#20222B; text-decoration:none;">Admissions</a>
+        <a href="/contact" style="color:#20222B; text-decoration:none;">Contact</a>
+      </nav>
+      <a href="https://ellie.bumo.com/location/joyful-zen-preschool-burbank-ca" target="_blank" rel="noopener" style="font-family:'Hanken Grotesk'; font-weight:800; font-size:14px; color:#20222B; background:transparent; border:2px solid #45B6E6; padding:11px 20px; border-radius:99px; cursor:pointer; text-decoration:none; margin-left:20px;">Book on Demand</a>
+      <a href="/book-a-tour" style="font-family:'Hanken Grotesk'; font-weight:800; font-size:14px; color:#fff; background:#45B6E6; padding:13px 22px; border-radius:99px; cursor:pointer; text-decoration:none; margin-left:10px;">Book a Tour ↗</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section style="background-color:#FBF9F4; background-image:linear-gradient(180deg, rgba(251,249,244,.88), rgba(251,249,244,.72) 42%, rgba(251,249,244,.97) 96%), url('assets/safari-mural.jpg'); background-size:auto, cover; background-position:center, center 28%; background-repeat:no-repeat, no-repeat; background-attachment:scroll, fixed; padding:56px 32px 40px; text-align:center;">
+  <div style="max-width:720px; margin:0 auto;">
+    <div style="font-family:'Gochi Hand'; font-size:28px; color:#45B6E6; transform:rotate(-2deg);">✦ Admissions</div>
+    <h1 style="font-family:'Fredoka'; font-weight:600; font-size:48px; line-height:1.1; letter-spacing:-0.01em; color:#20222B; margin:14px 0 0;">Four simple <span style="position:relative; white-space:nowrap; color:#2B9FD4;">steps.<svg style="position:absolute; left:0; bottom:-8px; width:100%; height:13px;" viewBox="0 0 130 13" preserveAspectRatio="none"><path d="M2 8 C 24 2, 48 12, 72 5 C 90 1, 106 10, 128 4" stroke="#45B6E6" stroke-width="4" fill="none" stroke-linecap="round"></path></svg></span></h1>
+    <p style="font-family:'Mulish'; font-size:17px; line-height:1.6; color:#4C4E58; margin:18px auto 0;">Joining Joyful Zen Preschool is easy, and always starts with a visit.</p>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section style="background:#fff; padding:50px 32px;">
+  <div style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:20px;">
+    <div style="border:1px solid #E3EDF4; border-radius:24px; padding:26px; text-align:center;">
+      <div style="width:44px; height:44px; margin:0 auto 14px; border-radius:50%; background:#45B6E6; color:#fff; font-family:'Fredoka'; font-weight:600; font-size:18px; display:flex; align-items:center; justify-content:center;">1</div>
+      <div style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#20222B;">Explore</div>
+      <p style="font-family:'Mulish'; font-size:14px; line-height:1.55; color:#5A6470; margin:6px 0 0;">Read about our program and philosophy.</p>
+    </div>
+    <div style="border:1px solid #E3EDF4; border-radius:24px; padding:26px; text-align:center;">
+      <div style="width:44px; height:44px; margin:0 auto 14px; border-radius:50%; background:#3E9B5F; color:#fff; font-family:'Fredoka'; font-weight:600; font-size:18px; display:flex; align-items:center; justify-content:center;">2</div>
+      <div style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#20222B;">Tour</div>
+      <p style="font-family:'Mulish'; font-size:14px; line-height:1.55; color:#5A6470; margin:6px 0 0;">Visit our classroom and meet our teachers.</p>
+    </div>
+    <div style="border:1px solid #E3EDF4; border-radius:24px; padding:26px; text-align:center;">
+      <div style="width:44px; height:44px; margin:0 auto 14px; border-radius:50%; background:#E0A33E; color:#fff; font-family:'Fredoka'; font-weight:600; font-size:18px; display:flex; align-items:center; justify-content:center;">3</div>
+      <div style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#20222B;">Apply</div>
+      <p style="font-family:'Mulish'; font-size:14px; line-height:1.55; color:#5A6470; margin:6px 0 0;">Submit your enrollment application.</p>
+    </div>
+    <div style="border:1px solid #E3EDF4; border-radius:24px; padding:26px; text-align:center;">
+      <div style="width:44px; height:44px; margin:0 auto 14px; border-radius:50%; background:#EA4B3C; color:#fff; font-family:'Fredoka'; font-weight:600; font-size:18px; display:flex; align-items:center; justify-content:center;">4</div>
+      <div style="font-family:'Fredoka'; font-weight:600; font-size:17px; color:#20222B;">Enroll</div>
+      <p style="font-family:'Mulish'; font-size:14px; line-height:1.55; color:#5A6470; margin:6px 0 0;">Get your invitation and complete paperwork.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REQUIREMENTS + TUITION -->
+<section style="background:#FBF9F4; padding:50px 32px;">
+  <div style="max-width:900px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+    <div style="background:#fff; border:1px solid #E3EDF4; border-radius:24px; padding:28px;">
+      <div style="font-family:'Fredoka'; font-weight:600; font-size:19px; color:#20222B;">Good to know</div>
+      <ul style="font-family:'Mulish'; font-size:15px; line-height:1.8; color:#4C4E58; margin:12px 0 0; padding-left:20px;">
+        <li>Ages 2½ to 5</li>
+        <li>Children should be potty-trained</li>
+        <li>1 teacher for every 4 children</li>
+        <li>Monday–Friday, 9:00am–3:00pm core day, extended care to 5:30pm</li>
+      </ul>
+    </div>
+    <div style="background:#fff; border:1px solid #E3EDF4; border-radius:24px; padding:28px;">
+      <div style="font-family:'Fredoka'; font-weight:600; font-size:19px; color:#20222B;">Tuition</div>
+      <p style="font-family:'Mulish'; font-size:15px; line-height:1.7; color:#4C4E58; margin:12px 0 0;">Tuition depends on the schedule you choose. Full-time, part-time, and extended-care pricing are all posted on our payment provider, BUMO, or reach out and we'll walk you through current rates and any openings.</p>
+      <a href="https://ellie.bumo.com/location/joyful-zen-preschool-burbank-ca" target="_blank" rel="noopener" style="display:inline-block; margin-top:14px; font-family:'Hanken Grotesk'; font-weight:800; font-size:14px; color:#2B9FD4; text-decoration:none; border-bottom:2px solid #45B6E6; padding-bottom:2px;">See pricing on BUMO ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- BUMO DROP-IN -->
+<section style="background:#fff; padding:22px 32px 40px;">
+  <div style="max-width:1180px; margin:0 auto; position:relative; border-radius:28px; overflow:hidden; background:#EA4B3C; padding:38px 44px; display:flex; align-items:center; justify-content:space-between; gap:28px; flex-wrap:wrap;">
+    <span style="position:absolute; top:14px; right:44px; font-family:'Gochi Hand'; font-size:22px; color:#FFE36B; transform:rotate(-5deg);">drop-in days! ✦</span>
+    <div style="display:flex; align-items:center; gap:22px; min-width:0;">
+      <div style="width:66px; height:66px; flex:none; border-radius:18px; background:rgba(255,255,255,.25); display:flex; align-items:center; justify-content:center;"><svg width="34" height="34" viewBox="0 0 48 48" fill="none"><rect x="8" y="11" width="32" height="29" rx="5" stroke="#fff" stroke-width="2.4"></rect><path d="M8 19 H40 M16 7 V14 M32 7 V14" stroke="#fff" stroke-width="2.4" stroke-linecap="round"></path><path d="M18 28 L22 32 L31 23" stroke="#FFE36B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+      <div style="min-width:0;">
+        <div style="font-family:'Gochi Hand'; font-size:20px; color:#FFE36B;">✦ On-demand care · powered by BUMO</div>
+        <div style="font-family:'Fredoka'; font-weight:600; font-size:27px; color:#fff; line-height:1.15; margin-top:4px;">Need care just for the day?</div>
+        <p style="font-family:'Mulish'; font-size:15px; line-height:1.55; color:#fff; margin:10px 0 0; max-width:52ch;">Bring your 2½–5 year old in for a single joyful day of play-based care, booked on demand, no enrollment required.</p>
+      </div>
+    </div>
+    <a href="https://ellie.bumo.com/location/joyful-zen-preschool-burbank-ca" target="_blank" rel="noopener" style="flex:none; font-family:'Mulish'; font-weight:800; font-size:16px; color:#20222B; background:#FFE36B; padding:16px 28px; border-radius:99px; text-decoration:none;">Book a Drop-In Day ↗</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faqs" style="background:#FBF9F4; padding:56px 32px 60px;">
+  <div style="max-width:860px; margin:0 auto;">
+    <div style="text-align:center; margin-bottom:34px;">
+      <div style="font-family:'Gochi Hand'; font-size:26px; color:#45B6E6;">✦ Good to know</div>
+      <h2 style="font-family:'Fredoka'; font-weight:600; font-size:34px; letter-spacing:-0.01em; color:#20222B; margin:8px 0 0;">Questions, answered</h2>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:14px;">
+      <details class="faq" style="background:#fff; border:1px solid #E3EDF4; border-radius:20px; padding:2px 24px;">
+        <summary style="display:flex; align-items:center; gap:14px; padding:20px 0;"><span style="flex:1; font-family:'Fredoka'; font-weight:600; font-size:18px; color:#20222B;">What ages do you welcome?</span><span class="faq-plus" style="flex:none; font-family:'Hanken Grotesk'; font-weight:700; font-size:24px; color:#45B6E6; transition:transform .2s;">+</span></summary>
+        <div style="padding:0 0 22px;"><p style="font-family:'Mulish'; font-size:15px; line-height:1.65; color:#555E66; margin:0;">Joyful Zen Preschool is for little ones ages 2½ to 5, in small, nurturing groups.</p></div>
+      </details>
+      <details class="faq" style="background:#fff; border:1px solid #E3EDF4; border-radius:20px; padding:2px 24px;">
+        <summary style="display:flex; align-items:center; gap:14px; padding:20px 0;"><span style="flex:1; font-family:'Fredoka'; font-weight:600; font-size:18px; color:#20222B;">What are your hours?</span><span class="faq-plus" style="flex:none; font-family:'Hanken Grotesk'; font-weight:700; font-size:24px; color:#45B6E6; transition:transform .2s;">+</span></summary>
+        <div style="padding:0 0 22px;"><p style="font-family:'Mulish'; font-size:15px; line-height:1.65; color:#555E66; margin:0;">Monday through Friday, 9:00am to 5:30pm. The core day runs 9:00am to 3:00pm, with a half-day option from 9:00am to 12:00pm. Extended care runs 3:00pm to 5:30pm.</p></div>
+      </details>
+      <details class="faq" style="background:#fff; border:1px solid #E3EDF4; border-radius:20px; padding:2px 24px;">
+        <summary style="display:flex; align-items:center; gap:14px; padding:20px 0;"><span style="flex:1; font-family:'Fredoka'; font-weight:600; font-size:18px; color:#20222B;">What's the teacher-to-child ratio?</span><span class="faq-plus" style="flex:none; font-family:'Hanken Grotesk'; font-weight:700; font-size:24px; color:#45B6E6; transition:transform .2s;">+</span></summary>
+        <div style="padding:0 0 22px;"><p style="font-family:'Mulish'; font-size:15px; line-height:1.65; color:#555E66; margin:0;">Just 1 teacher for every 4 children. Small groups mean every little one is truly seen, known, and cared for.</p></div>
+      </details>
+      <details class="faq" style="background:#fff; border:1px solid #E3EDF4; border-radius:20px; padding:2px 24px;">
+        <summary style="display:flex; align-items:center; gap:14px; padding:20px 0;"><span style="flex:1; font-family:'Fredoka'; font-weight:600; font-size:18px; color:#20222B;">What's your educational philosophy?</span><span class="faq-plus" style="flex:none; font-family:'Hanken Grotesk'; font-weight:700; font-size:24px; color:#45B6E6; transition:transform .2s;">+</span></summary>
+        <div style="padding:0 0 22px;"><p style="font-family:'Mulish'; font-size:15px; line-height:1.65; color:#555E66; margin:0;">We're play-based, and Montessori and Reggio inspired. Days are built around safe, nurturing, developmentally-thoughtful activities that follow each child's curiosity. Both Spanish and English are part of everyday life here.</p></div>
+      </details>
+      <details class="faq" style="background:#fff; border:1px solid #E3EDF4; border-radius:20px; padding:2px 24px;">
+        <summary style="display:flex; align-items:center; gap:14px; padding:20px 0;"><span style="flex:1; font-family:'Fredoka'; font-weight:600; font-size:18px; color:#20222B;">Does my child need to be potty-trained?</span><span class="faq-plus" style="flex:none; font-family:'Hanken Grotesk'; font-weight:700; font-size:24px; color:#45B6E6; transition:transform .2s;">+</span></summary>
+        <div style="padding:0 0 22px;"><p style="font-family:'Mulish'; font-size:15px; line-height:1.65; color:#555E66; margin:0;">Yes, children should be potty-trained before starting with us.</p></div>
+      </details>
+      <details class="faq" style="background:#fff; border:1px solid #E3EDF4; border-radius:20px; padding:2px 24px;">
+        <summary style="display:flex; align-items:center; gap:14px; padding:20px 0;"><span style="flex:1; font-family:'Fredoka'; font-weight:600; font-size:18px; color:#20222B;">What does a typical day look like?</span><span class="faq-plus" style="flex:none; font-family:'Hanken Grotesk'; font-weight:700; font-size:24px; color:#45B6E6; transition:transform .2s;">+</span></summary>
+        <div style="padding:0 0 22px;"><p style="font-family:'Mulish'; font-size:15px; line-height:1.65; color:#555E66; margin:0;">Mornings begin with Montessori lessons and arts and crafts, followed by a snack and a group mindfulness moment. From there it's outdoor play, lunch, a restful nap, and an afternoon snack, before free-choice play rounds out the day.</p></div>
+      </details>
+      <details class="faq" style="background:#fff; border:1px solid #E3EDF4; border-radius:20px; padding:2px 24px;">
+        <summary style="display:flex; align-items:center; gap:14px; padding:20px 0;"><span style="flex:1; font-family:'Fredoka'; font-weight:600; font-size:18px; color:#20222B;">Do I need to tour before enrolling?</span><span class="faq-plus" style="flex:none; font-family:'Hanken Grotesk'; font-weight:700; font-size:24px; color:#45B6E6; transition:transform .2s;">+</span></summary>
+        <div style="padding:0 0 22px;"><p style="font-family:'Mulish'; font-size:15px; line-height:1.65; color:#555E66; margin:0;">Yes, and we wouldn't have it any other way. A tour comes before any application so you can feel the space, meet our team, and picture your child here.</p></div>
+      </details>
+      <details class="faq" style="background:#fff; border:1px solid #E3EDF4; border-radius:20px; padding:2px 24px;">
+        <summary style="display:flex; align-items:center; gap:14px; padding:20px 0;"><span style="flex:1; font-family:'Fredoka'; font-weight:600; font-size:18px; color:#20222B;">How do I apply?</span><span class="faq-plus" style="flex:none; font-family:'Hanken Grotesk'; font-weight:700; font-size:24px; color:#45B6E6; transition:transform .2s;">+</span></summary>
+        <div style="padding:0 0 22px;"><p style="font-family:'Mulish'; font-size:15px; line-height:1.65; color:#555E66; margin:0;">Four simple steps: explore the program, schedule a tour, submit your enrollment application, then receive your invitation and complete the enrollment paperwork. We'll guide you through each one.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:#fff; padding:56px 32px 84px;">
+  <div style="max-width:1180px; margin:0 auto; position:relative; background:#45B6E6; border-radius:32px; padding:50px 32px; text-align:center; overflow:hidden;">
+    <svg width="36" height="36" viewBox="0 0 24 24" style="position:absolute; top:22px; left:34px; opacity:.9;" fill="#FFE36B"><path d="M12 2 L14.5 9 L22 9.5 L16 14.5 L18 22 L12 17.5 L6 22 L8 14.5 L2 9.5 L9.5 9 Z"></path></svg>
+    <svg width="24" height="24" viewBox="0 0 24 24" style="position:absolute; bottom:26px; right:60px; opacity:.85;" fill="#3E9B5F"><circle cx="12" cy="12" r="10"></circle></svg>
+    <span style="font-family:'Gochi Hand'; font-size:26px; color:#fff; transform:rotate(-3deg); display:inline-block;">let's do this! ✦</span>
+    <h2 style="font-family:'Fredoka'; font-weight:600; font-size:34px; letter-spacing:-0.01em; color:#fff; margin:12px 0 0;">Ready for step one?</h2>
+    <p style="font-family:'Mulish'; font-size:16px; line-height:1.6; color:#EAF6FC; max-width:46ch; margin:12px auto 0;">Book a tour and start the journey today.</p>
+    <div style="margin-top:22px;"><a href="/book-a-tour" style="font-family:'Mulish'; font-weight:800; font-size:17px; color:#20222B; background:#FFE36B; padding:19px 34px; border-radius:99px; display:inline-block; text-decoration:none;">Book a Tour ↗</a></div>
+  </div>
+</section>
+
+<footer style="position:relative; background:#EA4B3C; color:#fff; padding:64px 32px 32px;">
+  <svg viewBox="0 0 1440 40" preserveAspectRatio="none" style="position:absolute; top:-1px; left:0; width:100%; height:34px;"><path d="M0 20 C 180 0, 360 40, 540 20 C 720 0, 900 40, 1080 20 C 1260 0, 1350 30, 1440 15 L1440 0 L0 0 Z" fill="#EA4B3C"></path></svg>
+  <div style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:1.5fr 1fr 1fr 1.2fr; gap:36px;">
+    <div>
+      <div style="display:flex; align-items:center; gap:11px;"><img src="assets/logo-emblem.png" alt="Joyful Zen Preschool" style="height:58px; width:58px; border-radius:50%; border:2.5px solid #45B6E6; background:#fff; padding:4px;"><span style="font-family:'Fredoka'; font-weight:600; font-size:16px; color:#fff; line-height:1.05;">JOYFUL ZEN<br><span style="font-weight:600; font-size:11px; letter-spacing:0.24em; color:#fff;">PRESCHOOL</span></span></div>
+      <p style="font-family:'Mulish'; font-size:14px; line-height:1.6; color:#FFE9E4; margin:16px 0 0; max-width:32ch;">A warm, joyful preschool for ages 2½–5 in Burbank, California.</p>
+      <div style="font-family:'Gochi Hand'; font-size:22px; color:#FFE36B; margin-top:14px; transform:rotate(-2deg);">be kind ♥ stay curious</div>
+    </div>
+    <div>
+      <div style="font-family:'Hanken Grotesk'; font-weight:800; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#FFE9E4; margin-bottom:14px;">Explore</div>
+      <div style="display:flex; flex-direction:column; gap:10px; font-family:'Mulish'; font-size:14px; font-weight:600;">
+        <a href="/" style="color:#fff; text-decoration:none;">Home</a>
+        <a href="/about" style="color:#fff; text-decoration:none;">About</a>
+        <a href="/programs" style="color:#fff; text-decoration:none;">Programs</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Hanken Grotesk'; font-weight:800; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#FFE9E4; margin-bottom:14px;">Admissions</div>
+      <div style="display:flex; flex-direction:column; gap:10px; font-family:'Mulish'; font-size:14px; font-weight:600;">
+        <a href="/admissions" style="color:#fff; text-decoration:none;">Admissions</a>
+        <a href="/book-a-tour" style="color:#fff; text-decoration:none;">Book a Tour</a>
+        <a href="https://ellie.bumo.com/location/joyful-zen-preschool-burbank-ca" target="_blank" rel="noopener" style="color:#fff; text-decoration:none;">Book On-Demand (BUMO) ↗</a>
+        <a href="/contact" style="color:#fff; text-decoration:none;">Contact</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:'Hanken Grotesk'; font-weight:800; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#FFE9E4; margin-bottom:14px;">Contact</div>
+      <div style="display:flex; flex-direction:column; gap:10px; font-family:'Mulish'; font-size:14px; font-weight:600; color:#fff;">
+        <span>(323) 709-3045</span>
+        <span>info@joyfulzen.org</span>
+        <span>Burbank, California</span>
+      </div>
+      <a href="https://www.instagram.com/joyfulzenpreschool/" target="_blank" rel="noopener" style="margin-top:16px; display:inline-flex; flex-direction:column; align-items:flex-start; gap:6px; text-decoration:none;"><span style="font-family:'Gochi Hand'; font-size:19px; color:#FFE36B; transform:rotate(-2deg); display:inline-block;">follow us on instagram!</span><span style="display:flex; align-items:center; gap:10px;"><span aria-hidden="true" style="flex:none; display:inline-flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:10px; background:transparent; color:#fff;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="6" stroke="currentColor" stroke-width="2"></rect><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="2"></circle><circle cx="17.5" cy="6.5" r="1.35" fill="currentColor"></circle></svg></span><span style="font-family:'Hanken Grotesk'; font-weight:800; font-size:14px; color:#fff;">@joyfulzenpreschool</span></span></a>
+    </div>
+  </div>
+  <div style="max-width:1180px; margin:32px auto 0; padding-top:20px; border-top:1px solid rgba(255,255,255,.22); font-family:'Mulish'; font-size:12.5px; color:#FBD9D3; display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap;"><span>© 2026 Joyful Zen Preschool. All rights reserved.</span><a href="/privacy-policy" style="color:#fff; text-decoration:none;">Privacy Policy</a></div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    document.title = "Admissions | Joyful Zen Preschool, Burbank, CA";
+    var setMeta = function(name, content, prop) {
+      var sel = prop ? 'meta[property="'+name+'"]' : 'meta[name="'+name+'"]';
+      var el = document.head.querySelector(sel);
+      if (!el) { el = document.createElement('meta'); if (prop) el.setAttribute('property', name); else el.setAttribute('name', name); document.head.appendChild(el); }
+      el.setAttribute('content', content);
+    };
+    var pageDescription = "How to enroll at Joyful Zen Preschool in Burbank, CA: explore, tour, apply, and enroll. Ages 2½–5, 1:4 ratio. Read our FAQs.";
+    setMeta('description', pageDescription);
+    setMeta('robots', 'index, follow');
+    var canon = document.head.querySelector('link[rel="canonical"]');
+    if (!canon) { canon = document.createElement('link'); canon.setAttribute('rel','canonical'); document.head.appendChild(canon); }
+    canon.setAttribute('href', 'https://joyfulzen.org/admissions');
+    setMeta('og:title', document.title, true);
+    setMeta('og:description', pageDescription, true);
+    setMeta('og:type', 'website', true);
+    setMeta('og:url', 'https://joyfulzen.org/admissions', true);
+    setMeta('og:image', 'https://joyfulzen.org/assets/pre-boys-magnifier.jpg', true);
+    setMeta('og:site_name', 'Joyful Zen Preschool', true);
+    setMeta('twitter:card', 'summary_large_image');
+    setMeta('twitter:title', document.title);
+    setMeta('twitter:description', pageDescription);
+    setMeta('twitter:image', 'https://joyfulzen.org/assets/pre-boys-magnifier.jpg');
+    var ld = document.getElementById('ld-json');
+    if (!ld) { ld = document.createElement('script'); ld.type = 'application/ld+json'; ld.id = 'ld-json'; document.head.appendChild(ld); }
+    ld.textContent = JSON.stringify({
+      "@context":"https://schema.org",
+      "@type":["Preschool","ChildCare","EducationalOrganization"],
+      "name":"Joyful Zen Preschool",
+      "description":"Play-based preschool and childcare for ages 2½ to 5 in Burbank, California.",
+      "url":"https://joyfulzen.org/admissions",
+      "telephone":"+1-323-709-3045",
+      "email":"info@joyfulzen.org",
+      "address":{"@type":"PostalAddress","streetAddress":"3425 W. Olive Avenue","addressLocality":"Burbank","addressRegion":"CA","postalCode":"91505","addressCountry":"US"},
+      "areaServed":[{"@type":"City","name":"Burbank"},{"@type":"City","name":"Toluca Lake"},{"@type":"City","name":"Studio City"},{"@type":"City","name":"Glendale"},{"@type":"City","name":"North Hollywood"}],
+      "geo":{"@type":"GeoCoordinates","latitude":34.1808,"longitude":-118.309},
+      "priceRange":"$$",
+      "sameAs":["https://www.instagram.com/joyfulzenpreschool"]
+    });
+  }
+}
+
+</script>
+</body>
+</html>
