@@ -33,6 +33,10 @@ input::placeholder,textarea::placeholder{color:#AFB3BC;}
 }
 @media (max-width:600px){
   [style*="grid-template-columns: 0.92fr 1.08fr"],[style*="grid-template-columns: 1fr 1fr"],[style*="grid-template-columns: 1.5fr 1fr 1fr 1.2fr"]{grid-template-columns:1fr!important;}
+  [style*="grid-template-columns: repeat(4, 1fr)"]{grid-template-columns:1fr!important;}
+  [style*="grid-column: span 2"]{grid-column:auto!important;}
+  [style*="grid-row: span 2"]{grid-row:auto!important;}
+  [style*="grid-auto-rows: 178px"]{grid-auto-rows:228px!important;}
   .jz-tour-form{order:1;}
   .jz-tour-info{order:2;}
   [style*="max-width: 1180px"]{padding-left:18px!important;padding-right:18px!important;}
@@ -46,7 +50,7 @@ input::placeholder,textarea::placeholder{color:#AFB3BC;}
   #nav-toggle:checked~.nav-collapse{display:flex!important;flex-direction:column;align-items:stretch;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid #EFEFEC;box-shadow:0 18px 28px -18px rgba(0,0,0,.32);padding:6px 22px 18px;z-index:40;}
   .nav-collapse nav{flex-direction:column!important;align-items:stretch!important;gap:0!important;width:100%;font-size:16px!important;}
   .nav-collapse nav a{padding:13px 2px!important;width:100%;border-bottom:1px solid #F1F1ED;}
-  .nav-collapse>a{display:block!important;text-align:center;margin-top:10px;}
+  .nav-collapse>a{display:block!important;text-align:center;margin:10px 0 0!important;width:100%;box-sizing:border-box;}
 }
 </style>
 </helmet>
