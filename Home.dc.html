@@ -54,6 +54,11 @@ details.faq[open] .faq-plus{transform:rotate(45deg);}
   [style*="grid-template-columns:1fr 1fr; gap:48px"] p{max-width:100%!important; margin-left:auto!important; margin-right:auto!important;}
   [style*="grid-template-columns:1fr 1fr; gap:48px"] a{margin-left:auto!important; margin-right:auto!important;}
   [style*="drop-in days"]{align-self:center!important; margin-bottom:0!important;}
+  .jz-bumo-icon{display:none!important;}
+  .jz-bumo-icon-row{flex-direction:column!important; text-align:center!important;}
+  .jz-bumo-icon-row > div{min-width:0!important; width:100%!important;}
+  .jz-bumo-inner{flex-direction:column!important; align-items:center!important; text-align:center!important;}
+  .jz-bumo-btn{margin:6px auto 0!important;}
   [style*="padding:56px 32px 12px"]{padding:56px 24px 24px!important;}
   .jz-gallery-grid{grid-template-columns:1fr!important; grid-template-rows:none!important; gap:12px!important;}
   .jz-gallery-tile{grid-column:auto!important; grid-row:auto!important; aspect-ratio:4/3; min-height:0!important;}
@@ -161,16 +166,16 @@ details.faq[open] .faq-plus{transform:rotate(45deg);}
 <section style="background:#fff; padding:22px 32px 10px;">
   <div style="max-width:1180px; margin:0 auto; position:relative; border-radius:28px; overflow:hidden; background:#EA4B3C; padding:38px 44px; display:flex; flex-direction:column; gap:16px;">
     <span style="align-self:flex-end; font-family:'Gochi Hand'; font-size:22px; color:#FFE36B; transform:rotate(-5deg);">drop-in days! ✦</span>
-    <div style="display:flex; align-items:center; justify-content:space-between; gap:28px; flex-wrap:wrap;">
-    <div style="display:flex; align-items:center; gap:22px; min-width:0;">
-      <div style="width:66px; height:66px; flex:none; border-radius:18px; background:rgba(255,255,255,.25); display:flex; align-items:center; justify-content:center;"><svg width="34" height="34" viewBox="0 0 48 48" fill="none"><rect x="8" y="11" width="32" height="29" rx="5" stroke="#fff" stroke-width="2.4"></rect><path d="M8 19 H40 M16 7 V14 M32 7 V14" stroke="#fff" stroke-width="2.4" stroke-linecap="round"></path><path d="M18 28 L22 32 L31 23" stroke="#FFE36B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+    <div class="jz-bumo-inner" style="display:flex; align-items:center; justify-content:space-between; gap:28px; flex-wrap:wrap;">
+    <div class="jz-bumo-icon-row" style="display:flex; align-items:center; gap:22px; min-width:0;">
+      <div class="jz-bumo-icon" style="width:66px; height:66px; flex:none; border-radius:18px; background:rgba(255,255,255,.25); display:flex; align-items:center; justify-content:center;"><svg width="34" height="34" viewBox="0 0 48 48" fill="none"><rect x="8" y="11" width="32" height="29" rx="5" stroke="#fff" stroke-width="2.4"></rect><path d="M8 19 H40 M16 7 V14 M32 7 V14" stroke="#fff" stroke-width="2.4" stroke-linecap="round"></path><path d="M18 28 L22 32 L31 23" stroke="#FFE36B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
       <div style="min-width:0;">
         <div style="font-family:'Gochi Hand'; font-size:20px; color:#FFE36B;">✦ On-demand care · powered by BUMO</div>
         <div style="font-family:'Fredoka'; font-weight:600; font-size:27px; color:#fff; line-height:1.15; margin-top:4px;">Need care just for the day?</div>
         <p style="font-family:'Mulish'; font-size:15px; line-height:1.55; color:#fff; margin:10px 0 0; max-width:52ch;">Bring your 2½–5 year old in for a single joyful day of play-based care, booked on demand, no enrollment required.</p>
       </div>
     </div>
-    <a href="https://ellie.bumo.com/location/joyful-zen-preschool-burbank-ca" target="_blank" rel="noopener" style="flex:none; font-family:'Mulish'; font-weight:800; font-size:16px; color:#20222B; background:#FFE36B; padding:16px 28px; border-radius:99px; text-decoration:none;">Book a Drop-In Day ↗</a>
+    <a href="https://ellie.bumo.com/location/joyful-zen-preschool-burbank-ca" target="_blank" rel="noopener" class="jz-bumo-btn" style="flex:none; font-family:'Mulish'; font-weight:800; font-size:16px; color:#20222B; background:#FFE36B; padding:16px 28px; border-radius:99px; text-decoration:none;">Book a Drop-In Day ↗</a>
     </div>
   </div>
 </section>
