@@ -27,8 +27,8 @@ input::placeholder,textarea::placeholder{color:#AFB3BC;}
 .nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:34px;height:34px;cursor:pointer;flex:none;}
 .nav-burger span{display:block;height:3px;width:24px;background:#20222B;border-radius:2px;transition:transform .22s,opacity .2s;}
 @media (max-width:1024px){
-  .jz-gallery-grid{grid-template-columns:repeat(2,1fr)!important; grid-template-rows:none!important;}
-  .jz-gallery-tile{aspect-ratio:1/1;}
+  .jz-gallery-grid{grid-template-columns:repeat(2,1fr)!important; grid-auto-rows:auto!important;}
+  #tour-gallery-1,#tour-gallery-2,#tour-gallery-3,#tour-gallery-4,#tour-gallery-5,#tour-gallery-6{aspect-ratio:1/1;}
   [style*="grid-template-columns: 0.92fr 1.08fr"]{grid-template-columns:1fr!important;}
   [style*="max-width: 1180px"]{padding-left:24px!important;padding-right:24px!important;}
   [style*="font-size: 50px"]{font-size:40px!important;}
@@ -39,8 +39,8 @@ input::placeholder,textarea::placeholder{color:#AFB3BC;}
   [style*="background-attachment: scroll, fixed"]{background-attachment:scroll, scroll!important;}
   [style*="grid-template-columns: 0.92fr 1.08fr"],[style*="grid-template-columns: 1fr 1fr"],[style*="grid-template-columns: 1.5fr 1fr 1fr 1.2fr"]{grid-template-columns:1fr!important;}
   [style*="grid-template-columns: repeat(4, 1fr)"]{grid-template-columns:1fr!important;}
-  .jz-gallery-grid{grid-template-columns:1fr!important; grid-template-rows:none!important; gap:12px!important;}
-  .jz-gallery-tile{grid-column:auto!important; grid-row:auto!important; aspect-ratio:1/1; min-height:0!important;}
+  .jz-gallery-grid{grid-template-columns:1fr!important; grid-auto-rows:auto!important; gap:12px!important;}
+  #tour-gallery-1,#tour-gallery-2,#tour-gallery-3,#tour-gallery-4,#tour-gallery-5,#tour-gallery-6{grid-column:auto!important; grid-row:auto!important; aspect-ratio:1/1; min-height:0!important;}
   [style*="grid-column: span 2"]{grid-column:auto!important;}
   [style*="grid-row: span 2"]{grid-row:auto!important;}
   [style*="grid-auto-rows: 178px"]{grid-auto-rows:228px!important;}
