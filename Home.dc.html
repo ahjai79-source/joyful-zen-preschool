@@ -29,27 +29,32 @@ details.faq[open] .faq-plus{transform:rotate(45deg);}
 .nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:34px;height:34px;cursor:pointer;flex:none;}
 .nav-burger span{display:block;height:3px;width:24px;background:#20222B;border-radius:2px;transition:transform .22s,opacity .2s;}
 @media (max-width:1024px){
+  .jz-gallery-grid{grid-template-columns:repeat(2,1fr)!important; grid-template-rows:none!important;}
+  .jz-gallery-tile{aspect-ratio:4/3;}
   [style*="grid-template-columns: 1.05fr 0.95fr"],[style*="grid-template-columns: repeat(3, 1fr)"],[style*="grid-template-columns: repeat(4, 1fr)"]{grid-template-columns:repeat(2,1fr)!important;}
   [style*="max-width: 1180px"]{padding-left:24px!important;padding-right:24px!important;}
-  [style*="font-size: 60px"]{font-size:46px!important;}
+  [style*="font-size: 58px"]{font-size:46px!important;}
 }
 @media (max-width:600px){
-  [style*="left:290px"]{left:auto!important; right:10px!important;}
+  [style*="padding:56px 32px 12px"]{padding:56px 24px 24px!important;}
+  .jz-gallery-grid{grid-template-columns:1fr!important; grid-template-rows:none!important; gap:12px!important;}
+  .jz-gallery-tile{grid-column:auto!important; grid-row:auto!important; aspect-ratio:4/3; min-height:0!important;}
+  [style*="left: -18px"]{left:auto!important; right:0!important;}
   [style*="grid-template-rows: 178px 178px 260px"]{grid-template-rows:auto!important;}
-  [style*="padding:38px 44px"]{padding:26px 20px!important;}
-  [style*="padding:56px 44px"]{padding:34px 22px!important;}
-  [style*="padding:64px 32px 32px"]{padding:44px 18px 24px!important;}
-  [style*="padding:70px 32px 84px"]{padding:36px 16px 44px!important;}
-  [style*="padding:70px 32px"]{padding:40px 16px!important;}
+  [style*="padding: 38px 44px"]{padding:26px 20px!important;}
+  [style*="padding: 56px 44px"]{padding:34px 22px!important;}
+  [style*="padding: 64px 32px 32px"]{padding:44px 18px 24px!important;}
+  [style*="padding: 70px 32px 84px"]{padding:36px 16px 44px!important;}
+  [style*="padding: 70px 32px"]{padding:40px 16px!important;}
 
-  [style*="background-attachment:scroll, fixed"]{background-attachment:scroll, scroll!important;}
+  [style*="background-attachment: scroll, fixed"]{background-attachment:scroll, scroll!important;}
   [style*="grid-template-columns: 1.05fr 0.95fr"],[style*="grid-template-columns: repeat(3, 1fr)"],[style*="grid-template-columns: repeat(4, 1fr)"],[style*="grid-template-columns: 1fr 1fr"],[style*="grid-template-columns: 1.5fr 1fr 1fr 1.2fr"]{grid-template-columns:1fr!important;}
   [style*="grid-column: span 2"]{grid-column:auto!important;}
   [style*="grid-row: span 2"]{grid-row:auto!important;}
   [style*="grid-auto-rows: 178px"]{grid-auto-rows:228px!important;}
-  [style*="width: 460px"]{width:78vw!important;max-width:320px!important;height:78vw!important;max-height:320px!important;}
+  [style*="width: 560px"]{width:78vw!important;max-width:320px!important;height:78vw!important;max-height:320px!important;}
   [style*="max-width: 1180px"]{padding-left:18px!important;padding-right:18px!important;}
-  [style*="font-size: 60px"]{font-size:34px!important;}
+  [style*="font-size: 58px"]{font-size:34px!important;}
   [style*="font-size: 40px"]{font-size:28px!important;}
   [style*="font-size: 36px"]{font-size:26px!important;}
   .nav-burger{display:flex!important;}
@@ -111,7 +116,7 @@ details.faq[open] .faq-plus{transform:rotate(45deg);}
 </section>
 
 <!-- TRUST PILLS -->
-<section style="background:#fff; padding:8px 32px 12px;">
+<section style="background:#fff; padding:56px 32px 12px;">
   <div style="max-width:1180px; margin:0 auto; display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
     <span style="font-family:'Hanken Grotesk'; font-weight:800; font-size:15px; color:#fff; background:#3E9B5F; padding:14px 24px; border-radius:99px; transform:rotate(-2deg); display:inline-flex; align-items:center; gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2 L14.5 9 L22 9.5 L16 14.5 L18 22 L12 17.5 L6 22 L8 14.5 L2 9.5 L9.5 9 Z" fill="#fff"></path></svg>Play-based learning</span>
     <span style="font-family:'Hanken Grotesk'; font-weight:800; font-size:15px; color:#EA4B3C; background:#fff; border:3px solid #EA4B3C; padding:11px 22px; border-radius:99px; transform:rotate(1.5deg); display:inline-flex; align-items:center; gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 20 C4 15 8 12 13 12" stroke="#EA4B3C" stroke-width="2.4" stroke-linecap="round"></path><circle cx="17" cy="9" r="4.5" stroke="#EA4B3C" stroke-width="2.4"></circle></svg>1 teacher : 4 kids</span>
@@ -154,13 +159,13 @@ details.faq[open] .faq-plus{transform:rotate(45deg);}
 <section style="background:#fff; padding:60px 32px 16px; text-align:center;">
   <div style="font-family:'Gochi Hand'; font-size:26px; color:#45B6E6;">✦ A peek into our days</div>
   <h2 style="font-family:'Fredoka'; font-weight:600; font-size:34px; letter-spacing:-0.01em; color:#20222B; margin:8px 0 30px;">Little learners, big moments</h2>
-  <div style="max-width:1120px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:178px 178px 260px; gap:16px;">
-    <div role="img" aria-label="Our safari-themed playroom with palm trees and animal murals" style="grid-column:span 2; grid-row:span 2; border-radius:24px; overflow:hidden; background:url('assets/pre-safari-room.jpg') center 42%/cover no-repeat;"></div>
-    <div role="img" aria-label="Preschoolers in the playroom" style="grid-column:span 2; border-radius:24px; overflow:hidden; background:url('assets/pre-playroom.jpg') center 42%/cover no-repeat;"></div>
-    <div role="img" aria-label="A preschooler exploring with a magnifying glass" style="border-radius:24px; overflow:hidden; background:url('assets/pre-discovery.jpg') center 26%/cover no-repeat;"></div>
-    <div role="img" aria-label="A preschooler coloring at the table" style="border-radius:24px; overflow:hidden; background:url('assets/pre-space.jpg') center 28%/cover no-repeat;"></div>
-    <div role="img" aria-label="A preschooler reading a book in our cozy reading nook" style="grid-column:span 2; border-radius:24px; overflow:hidden; background:url('assets/pre-reading.jpg') center 30%/cover no-repeat;"></div>
-    <div role="img" aria-label="A teacher and preschooler in the classroom" style="grid-column:span 2; border-radius:24px; overflow:hidden; background:url('assets/pre-classroom.jpg') center 42%/cover no-repeat;"></div>
+  <div class="jz-gallery-grid" style="max-width:1120px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:178px 178px 260px; gap:16px;">
+    <div class="jz-gallery-tile" role="img" aria-label="Our safari-themed playroom with palm trees and animal murals" style="grid-column:span 2; grid-row:span 2; border-radius:24px; overflow:hidden; background:url('assets/pre-safari-room.jpg') center 42%/cover no-repeat;"></div>
+    <div class="jz-gallery-tile" role="img" aria-label="Preschoolers in the playroom" style="grid-column:span 2; border-radius:24px; overflow:hidden; background:url('assets/pre-playroom.jpg') center 42%/cover no-repeat;"></div>
+    <div class="jz-gallery-tile" role="img" aria-label="A preschooler exploring with a magnifying glass" style="border-radius:24px; overflow:hidden; background:url('assets/pre-discovery.jpg') center 26%/cover no-repeat;"></div>
+    <div class="jz-gallery-tile" role="img" aria-label="A preschooler coloring at the table" style="border-radius:24px; overflow:hidden; background:url('assets/pre-space.jpg') center 28%/cover no-repeat;"></div>
+    <div class="jz-gallery-tile" role="img" aria-label="A preschooler reading a book in our cozy reading nook" style="grid-column:span 2; border-radius:24px; overflow:hidden; background:url('assets/pre-reading.jpg') center 30%/cover no-repeat;"></div>
+    <div class="jz-gallery-tile" role="img" aria-label="A teacher and preschooler in the classroom" style="grid-column:span 2; border-radius:24px; overflow:hidden; background:url('assets/pre-classroom.jpg') center 42%/cover no-repeat;"></div>
   </div>
 </section>
 
@@ -341,12 +346,12 @@ class Component extends DCLogic {
     setMeta('og:description', "Joyful Zen Preschool offers play-based preschool and childcare for ages 2½ to 5 in Burbank, CA, near Toluca Lake, Studio City, Glendale and North Hollywood.", true);
     setMeta('og:type', 'website', true);
     setMeta('og:url', 'https://joyfulzen.org/', true);
-    setMeta('og:image', 'https://joyfulzen.org/assets/pre-boys-magnifier.jpg', true);
+    setMeta('og:image', 'https://joyfulzen.org/assets/og-home.jpg', true);
     setMeta('og:site_name', 'Joyful Zen Preschool', true);
     setMeta('twitter:card', 'summary_large_image');
     setMeta('twitter:title', document.title);
     setMeta('twitter:description', "Joyful Zen Preschool offers play-based preschool and childcare for ages 2½ to 5 in Burbank, CA.");
-    setMeta('twitter:image', 'https://joyfulzen.org/assets/pre-boys-magnifier.jpg');
+    setMeta('twitter:image', 'https://joyfulzen.org/assets/og-home.jpg');
     var ld = document.getElementById('ld-json');
     if (!ld) { ld = document.createElement('script'); ld.type = 'application/ld+json'; ld.id = 'ld-json'; document.head.appendChild(ld); }
     ld.textContent = JSON.stringify({
