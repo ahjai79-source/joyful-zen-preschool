@@ -36,6 +36,8 @@ details.faq[open] .faq-plus{transform:rotate(45deg);}
   [style*="font-size: 58px"]{font-size:46px!important;}
 }
 @media (max-width:600px){
+  .instagram-media{width:100%!important; min-width:0!important; max-width:100%!important;}
+  iframe.instagram-media{max-width:100%!important;}
   [style*="left:290px"]{left:auto!important; right:10px!important;}
   [style*="grid-template-columns:1.05fr 0.95fr; align-items:stretch"]{grid-template-columns:1fr!important;}
   [style*="grid-template-columns:1.05fr 0.95fr; align-items:stretch"] [role="img"]{min-height:220px!important;}
@@ -44,7 +46,7 @@ details.faq[open] .faq-plus{transform:rotate(45deg);}
   [style*="grid-template-columns:1fr 1fr; gap:48px"] > div:first-child{max-width:100%; margin:0 auto!important;}
   [style*="grid-template-columns:1fr 1fr; gap:48px"] p{max-width:100%!important; margin-left:auto!important; margin-right:auto!important;}
   [style*="grid-template-columns:1fr 1fr; gap:48px"] a{margin-left:auto!important; margin-right:auto!important;}
-  [style*="drop-in days"]{position:static!important; display:block!important; text-align:center; margin-bottom:10px; transform:none!important;}
+  [style*="drop-in days"]{align-self:center!important; margin-bottom:0!important;}
   [style*="padding:56px 32px 12px"]{padding:56px 24px 24px!important;}
   .jz-gallery-grid{grid-template-columns:1fr!important; grid-template-rows:none!important; gap:12px!important;}
   .jz-gallery-tile{grid-column:auto!important; grid-row:auto!important; aspect-ratio:4/3; min-height:0!important;}
@@ -150,8 +152,9 @@ details.faq[open] .faq-plus{transform:rotate(45deg);}
 
 <!-- BUMO DROP-IN -->
 <section style="background:#fff; padding:22px 32px 10px;">
-  <div style="max-width:1180px; margin:0 auto; position:relative; border-radius:28px; overflow:hidden; background:#EA4B3C; padding:38px 44px; display:flex; align-items:center; justify-content:space-between; gap:28px; flex-wrap:wrap;">
-    <span style="position:absolute; top:14px; right:44px; font-family:'Gochi Hand'; font-size:22px; color:#FFE36B; transform:rotate(-5deg);">drop-in days! ✦</span>
+  <div style="max-width:1180px; margin:0 auto; position:relative; border-radius:28px; overflow:hidden; background:#EA4B3C; padding:38px 44px; display:flex; flex-direction:column; gap:16px;">
+    <span style="align-self:flex-end; font-family:'Gochi Hand'; font-size:22px; color:#FFE36B; transform:rotate(-5deg);">drop-in days! ✦</span>
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:28px; flex-wrap:wrap;">
     <div style="display:flex; align-items:center; gap:22px; min-width:0;">
       <div style="width:66px; height:66px; flex:none; border-radius:18px; background:rgba(255,255,255,.25); display:flex; align-items:center; justify-content:center;"><svg width="34" height="34" viewBox="0 0 48 48" fill="none"><rect x="8" y="11" width="32" height="29" rx="5" stroke="#fff" stroke-width="2.4"></rect><path d="M8 19 H40 M16 7 V14 M32 7 V14" stroke="#fff" stroke-width="2.4" stroke-linecap="round"></path><path d="M18 28 L22 32 L31 23" stroke="#FFE36B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
       <div style="min-width:0;">
@@ -161,6 +164,7 @@ details.faq[open] .faq-plus{transform:rotate(45deg);}
       </div>
     </div>
     <a href="https://ellie.bumo.com/location/joyful-zen-preschool-burbank-ca" target="_blank" rel="noopener" style="flex:none; font-family:'Mulish'; font-weight:800; font-size:16px; color:#20222B; background:#FFE36B; padding:16px 28px; border-radius:99px; text-decoration:none;">Book a Drop-In Day ↗</a>
+    </div>
   </div>
 </section>
 
@@ -284,7 +288,7 @@ details.faq[open] .faq-plus{transform:rotate(45deg);}
       <p style="font-family:'Mulish'; font-size:17px; line-height:1.6; color:#EAF6FC; max-width:42ch; margin:14px 0 0;">Book a tour for your 2½–5 year old and feel the joy for yourself.</p>
       <div style="margin-top:26px;"><a href="/book-a-tour" style="font-family:'Mulish'; font-weight:800; font-size:17px; color:#20222B; background:#FFE36B; padding:19px 34px; border-radius:99px; display:inline-block; text-decoration:none; align-self:flex-start;">Book a Preschool Tour ↗</a></div>
     </div>
-    <div role="img" aria-label="Our rooftop outdoor play yard, with a bounce house, slide, and trampoline" style="position:relative; min-height:320px; background:url('assets/pre-outdoor.jpg') center 55%/cover no-repeat;">
+    <div role="img" aria-label="Our rooftop outdoor play yard, with a bounce house, slide, and trampoline" style="position:relative; height:100%; min-height:320px; background:url('assets/pre-outdoor.jpg') center 55%/cover no-repeat;">
       <span style="position:absolute; top:20px; right:24px; font-family:'Gochi Hand'; font-size:22px; color:#20222B; background:#FFE36B; padding:8px 16px; border-radius:99px; box-shadow:0 10px 24px -10px rgba(0,0,0,.35); transform:rotate(4deg);">our play yard! ✦</span>
     </div>
   </div>
