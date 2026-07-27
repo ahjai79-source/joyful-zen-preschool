@@ -355,27 +355,27 @@ class Component extends DCLogic {
       if (window.instgrm) { tryProcess(); clearInterval(iv); }
     }, 300);
     setTimeout(function(){ clearInterval(iv); }, 8000);
-    document.title = "Joyful Zen Preschool | Preschool & Childcare in Burbank, CA";
+    document.title = "Burbank Preschool | Joyful Zen Preschool & Early Learning";
     var setMeta = function(name, content, prop) {
       var sel = prop ? 'meta[property="'+name+'"]' : 'meta[name="'+name+'"]';
       var el = document.head.querySelector(sel);
       if (!el) { el = document.createElement('meta'); if (prop) el.setAttribute('property', name); else el.setAttribute('name', name); document.head.appendChild(el); }
       el.setAttribute('content', content);
     };
-    setMeta('description', "Joyful Zen Preschool offers play-based preschool and childcare for ages 2½ to 5 in Burbank, CA, near Toluca Lake, Studio City, Glendale and North Hollywood. Book a tour today.");
+    setMeta('description', "Looking for a preschool in Burbank, CA? Joyful Zen Preschool offers small classes, play-based learning, kindergarten readiness, caring teachers, and private tours for children ages 2½–5.");
     setMeta('robots', 'index, follow');
     var canon = document.head.querySelector('link[rel="canonical"]');
     if (!canon) { canon = document.createElement('link'); canon.setAttribute('rel','canonical'); document.head.appendChild(canon); }
     canon.setAttribute('href', 'https://joyfulzen.org/');
     setMeta('og:title', document.title, true);
-    setMeta('og:description', "Joyful Zen Preschool offers play-based preschool and childcare for ages 2½ to 5 in Burbank, CA, near Toluca Lake, Studio City, Glendale and North Hollywood.", true);
+    setMeta('og:description', "Looking for a preschool in Burbank, CA? Joyful Zen Preschool offers small classes, play-based learning, kindergarten readiness, caring teachers, and private tours for children ages 2½–5.", true);
     setMeta('og:type', 'website', true);
     setMeta('og:url', 'https://joyfulzen.org/', true);
     setMeta('og:image', 'https://joyfulzen.org/assets/og-home.jpg', true);
     setMeta('og:site_name', 'Joyful Zen Preschool', true);
     setMeta('twitter:card', 'summary_large_image');
     setMeta('twitter:title', document.title);
-    setMeta('twitter:description', "Joyful Zen Preschool offers play-based preschool and childcare for ages 2½ to 5 in Burbank, CA.");
+    setMeta('twitter:description', "Looking for a preschool in Burbank, CA? Joyful Zen Preschool offers small classes, play-based learning, kindergarten readiness, caring teachers, and private tours for children ages 2½–5.");
     setMeta('twitter:image', 'https://joyfulzen.org/assets/og-home.jpg');
     var ld = document.getElementById('ld-json');
     if (!ld) { ld = document.createElement('script'); ld.type = 'application/ld+json'; ld.id = 'ld-json'; document.head.appendChild(ld); }

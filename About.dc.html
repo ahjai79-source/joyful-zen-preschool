@@ -225,14 +225,14 @@ html,body{margin:0; overflow-x:hidden; max-width:100vw;}
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
   componentDidMount() {
-    document.title = "About Us | Joyful Zen Preschool, Burbank, CA";
+    document.title = "About Joyful Zen Preschool | Burbank Preschool";
     var setMeta = function(name, content, prop) {
       var sel = prop ? 'meta[property="'+name+'"]' : 'meta[name="'+name+'"]';
       var el = document.head.querySelector(sel);
       if (!el) { el = document.createElement('meta'); if (prop) el.setAttribute('property', name); else el.setAttribute('name', name); document.head.appendChild(el); }
       el.setAttribute('content', content);
     };
-    var pageDescription = "Meet Joyful Zen Preschool in Burbank, CA: a small, play-based program for ages 2½–5 with a 1:4 teacher ratio, near Toluca Lake, Studio City, Glendale and North Hollywood.";
+    var pageDescription = "Learn what makes Joyful Zen Preschool one of Burbank's trusted preschools. Discover our philosophy, experienced teachers, low ratios, nurturing classrooms, and play-based early education.";
     setMeta('description', pageDescription);
     setMeta('robots', 'index, follow');
     var canon = document.head.querySelector('link[rel="canonical"]');

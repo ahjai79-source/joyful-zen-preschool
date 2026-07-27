@@ -258,14 +258,14 @@ details.faq[open] .faq-plus{transform:rotate(45deg);}
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
   componentDidMount() {
-    document.title = "Admissions | Joyful Zen Preschool, Burbank, CA";
+    document.title = "Preschool Enrollment | Admissions in Burbank, CA";
     var setMeta = function(name, content, prop) {
       var sel = prop ? 'meta[property="'+name+'"]' : 'meta[name="'+name+'"]';
       var el = document.head.querySelector(sel);
       if (!el) { el = document.createElement('meta'); if (prop) el.setAttribute('property', name); else el.setAttribute('name', name); document.head.appendChild(el); }
       el.setAttribute('content', content);
     };
-    var pageDescription = "How to enroll at Joyful Zen Preschool in Burbank, CA: explore, tour, apply, and enroll. Ages 2½–5, 1:4 ratio. Read our FAQs.";
+    var pageDescription = "Ready to enroll? Learn about admissions, tuition, tours, and enrollment at Joyful Zen Preschool in Burbank, CA. Limited spaces available for toddlers and preschool-age children.";
     setMeta('description', pageDescription);
     setMeta('robots', 'index, follow');
     var canon = document.head.querySelector('link[rel="canonical"]');

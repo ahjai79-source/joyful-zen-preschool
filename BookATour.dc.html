@@ -198,14 +198,14 @@ input::placeholder,textarea::placeholder{color:#AFB3BC;}
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
   componentDidMount() {
-    document.title = "Book a Tour | Joyful Zen Preschool, Burbank, CA";
+    document.title = "Schedule a Preschool Tour | Joyful Zen Burbank";
     var setMeta = function(name, content, prop) {
       var sel = prop ? 'meta[property="'+name+'"]' : 'meta[name="'+name+'"]';
       var el = document.head.querySelector(sel);
       if (!el) { el = document.createElement('meta'); if (prop) el.setAttribute('property', name); else el.setAttribute('name', name); document.head.appendChild(el); }
       el.setAttribute('content', content);
     };
-    var pageDescription = "Book a private tour of Joyful Zen Preschool in Burbank, CA for your 2½–5 year old. Spots are limited.";
+    var pageDescription = "Book a private preschool tour in Burbank, CA and see why local families choose Joyful Zen Preschool. Meet our teachers, explore the classrooms, and ask questions about enrollment.";
     setMeta('description', pageDescription);
     setMeta('robots', 'index, follow');
     var canon = document.head.querySelector('link[rel="canonical"]');
